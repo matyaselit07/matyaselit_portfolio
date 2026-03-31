@@ -1,0 +1,396 @@
+/* Fonts */
+@font-face {
+   font-family: "Roboto-Mono";
+   src: url(/assets/fonts/RobotoMono-VariableFont_wght.ttf);
+   font-weight: 600;
+}
+
+
+
+/* Colors */
+:root {
+   --color-primary: #00A6FB;
+   --color-primary-light: #0582CA;
+   --color-secondary: #006494;
+   --color-secondary-light: #003554;
+   --color-secondary-dark: #051923;
+}
+
+
+* {
+   padding: 0;
+   margin: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+
+
+/* Basic formatting */
+
+#fooldal {
+   visibility: hidden;
+}
+
+body {
+   font-family: "Roboto-Mono";
+   font-size: 22px;
+   text-shadow: 1px 1px black;
+   color: var(--color-primary);
+   background-color: var(--color-secondary-light);
+}
+
+h2 {
+   padding: 2rem;
+   font-size: 2.5rem;
+}
+
+li {
+   list-style: none;
+}
+
+
+
+/* Header */
+
+.navbar-list {
+   display: flex;
+   justify-content: center;
+   padding: 2rem 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: var(--color-secondary-light);
+   visibility: visible;
+   transition-duration: 1s ease;
+   transition-property: none;
+}
+
+.navbar-list__data {
+   color: var(--color-primary-light);
+   font-size: 2rem;
+   text-decoration: none;
+   padding: 20px 30px;
+   margin: auto;
+   cursor: pointer;
+}
+
+
+
+/* Main */
+
+.main-img {
+   min-width: 100%;
+   height: 100%;
+   opacity: .65;
+   position:fixed;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+h1 {
+   font-size: 4rem;
+   padding: auto;
+   margin: 5rem;
+}
+
+.about_me-div {
+   max-width: 80vw;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+}
+
+.about_me-div p {
+   padding: 2rem;
+   margin: auto;
+}
+
+.self-portrait {
+   width: 250px;
+   min-width: 250px;
+   padding: 2rem;
+   max-height: 340px;
+
+}
+
+.skills {
+   display: flex;
+   justify-content: center;
+}
+
+.skills li {
+   display: flex;
+   flex-direction: column;
+   width: 150px;
+   margin: 2rem;
+   text-align: center;
+}
+
+
+
+/* Portfólió */
+
+.portfolio-div {
+   display: flex;
+   justify-content: space-around;
+}
+
+
+.portfolio-item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.bubble {
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  background: var(--color-secondary);
+  border-radius: 20px;
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item:hover .portfolio-img {
+  opacity: 0;
+}
+
+.portfolio-item:hover .bubble {
+  opacity: 1;
+}
+
+
+
+/* Kapcsolat */
+
+form {
+   text-align: center;
+   margin-bottom: 10rem;
+}
+
+input {
+   height: 2rem;
+   width: 300px;
+   font-size: 1rem;
+   font-weight: 600;
+   border-radius: 10px;
+   padding-left: .5rem;
+
+}
+
+input::placeholder {
+   color: var(--color-secondary);
+}
+
+textarea {
+   width: 400px;
+   height: 300px;
+   max-width: 400px;
+   max-height: 300px;
+   padding-left: .5rem;
+}
+
+.form-button {
+   font-size: 1.2rem;
+   color: var(--color-secondary);
+   background-color: var(--color-primary);
+   width: 150px;
+   height: 70px;
+   margin: 1rem 0;
+   cursor: pointer;
+}
+
+.form-button:hover {
+   color: var(--color-primary);
+   background-color: var(--color-secondary);
+   transition: .8s;
+}
+
+
+/* Footer */
+footer {
+   background-color: var(--color-secondary-light);
+}
+
+h3 {
+   text-align: center;
+   padding-bottom: 2rem;
+}
+
+.footer-div {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.footer-logo {
+   width: 5rem;
+   padding: 2rem;
+}
+
+.footer-logo:hover {
+   transform: rotate(360deg) scale(1.2);
+   transition: transform 1s;  
+}
+
+
+
+/* Hamburger Bar */
+
+#menu__toggle {
+   visibility: hidden;
+}
+
+.hamburger-button {
+   display: flex;
+   align-items: center;
+   position: fixed;
+   top: 20px;
+   left: 30px;
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   z-index: 1;
+   visibility: hidden;
+}
+
+.hamburger-lines,
+.hamburger-lines::before,
+.hamburger-lines::after {
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 4px;
+   background-color: var(--color-primary-light);
+   transition-duration: 0.1s;
+}
+
+.hamburger-lines::before {
+   content: "";
+   top: -10px;
+}
+
+.hamburger-lines::after {
+   content: "";
+   top: 10px;
+}
+
+#menu__toggle:checked ~ .navbar-list {
+   visibility: visible;
+   top: 0;
+}
+
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines {
+   transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines:before{
+   display: none;
+}
+
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines:after{
+   top: 0;
+   transform: rotate(90deg);
+}
+
+
+
+/* Media queries */
+
+@media (max-width: 480px)
+{ 
+   /* kis mobilok felett */
+}
+
+@media (max-width: 600px)  
+{ 
+   /* mobil → phablet/tablet */
+   .skills {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   h3 {
+      font-size: 1.2rem;
+   }
+}
+
+@media (max-width: 768px)  
+{ 
+   /* táblagépek álló */
+   h2 {
+      text-align: center;
+   }
+   
+   .navbar-list {
+      visibility: hidden;
+      flex-direction: column;
+      align-items: center;
+      top: -300px;
+      transition-duration: 1s ease;
+      z-index: 2;
+   }
+
+   textarea {
+      max-width: 80%;
+   }
+
+   .hamburger-lines,
+   .hamburger-lines::before,
+   .hamburger-lines::after {
+      transition-property: none;        
+   }
+
+   .hamburger-button {
+      visibility: visible;
+      z-index: 10;
+   }
+}
+
+@media (max-width: 1024px) 
+{ 
+   /* táblagépek fekvő / kisebb laptopok */
+   .portfolio-div {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .about_me-div {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media (max-width: 1280px) 
+{ 
+   /* desktop */
+}
+
+@media (max-width: 1440px) 
+{ 
+   /* nagyobb desktop */
+}
+
+@media (max-width: 1920px) 
+{ 
+   /* FHD és felette */ 
+}
