@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +7,19 @@
    <title>Matyaselit</title>
 </head>
    <body>
-      <div id="fooldal">123</div>
+      <div id="fooldal"></div>
       <!-- Fejléc -->
       <header>
-            <input type="checkbox" name="hamburger" id="menu__toggle">
-            <label for="menu__toggle" class="hamburger-button">
-                <span class="hamburger-lines"></span>
-            </label>
-            <ul class="navbar-list">
-               <li><a href="#fooldal" class="navbar-list__data">FŐOLDAL</a></li>
-               <li><a href="#rolam" class="navbar-list__data">RÓLAM</a></li>
-               <li><a href="#my_portfolio" class="navbar-list__data">PORTFÓLIÓ</a></li>
-               <li><a href="#kapcsolat" class="navbar-list__data">KAPCSOLAT</a></li>
-            </ul>
+         <input type="checkbox" name="hamburger" id="menu-toggle">
+         <label for="menu-toggle" class="hamburger-button">
+             <span class="hamburger-lines"></span>
+         </label>
+         <nav class="navbar-list">
+            <div><a href="#fooldal" class="navbar-list__data">FŐOLDAL</a></div>
+            <div><a href="#rolam" class="navbar-list__data">RÓLAM</a></div>
+            <div><a href="#my_portfolio" class="navbar-list__data">PORTFÓLIÓ</a></div>
+            <div><a href="#kapcsolat" class="navbar-list__data">KAPCSOLAT</a></div>
+            </nav>
       </header>
       <main>
 
@@ -36,7 +36,7 @@
             <h2>Ismereteim</h2>
             <ul class="skills">
                <li>
-                  <img class="skills-logo" src="/assets/svg/html5-logo.svg" alt="HTML5(Flexbox, Grid)">
+                  <img class="skills-logo" src="/assets/svg/html5-logo.svg" alt="HTML5">
                   <p>HTML5</p>
                </li>
                <li>
@@ -51,7 +51,7 @@
          </div>
 
          <!-- Portfólió -->
-         <div id="my_portfolio" class="portolio">
+         <section id="my_portfolio" class="portolio">
             <h2>Portfólió</h2>
             <div class="portfolio-div">
                 <div class="portfolio-item">
@@ -67,7 +67,7 @@
                     <div class="bubble">Munka 3 leírás</div>
                 </div>
             </div>
-         </div>
+         </section>
 
          <!-- Kapcsolat -->
          <div class="contact">
@@ -76,7 +76,6 @@
             <form action="https://formspree.io/f/mblaeyjo" method="post">
             <section>
                <label for="név-id"></label>
-               <br>
                <input 
                type="text"
                name="név"
@@ -86,17 +85,15 @@
             </section>
             <section>
                <label for="email-id"></label>
-               <br>
                <input 
                type="email" 
                name="e-mail"
-               id="eamil-id"
+               id="email-id"
                placeholder="E-mail..."
                required>
             </section>
             <section>
                <label for="szöveg-id"></label>
-               <br>
                <textarea class="form-text" 
                name="szöveg" 
                id="szöveg-id"
