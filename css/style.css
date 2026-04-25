@@ -81,10 +81,10 @@ header {
 .navbar-list--data {
    border-radius: 30px;
    color: var(--color-primary-light);
-   font-size: 2rem;
+   font-size: 1.7rem;
    text-decoration: none;
-   padding: 1rem;
-   margin: 1.5rem;
+   padding: .3rem 1rem;
+   margin: 1rem;
    cursor: pointer;
 }
 
@@ -123,9 +123,11 @@ header:hover ~ .blur-overlay {
   inset: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
   opacity: .45;
   z-index: -1;
+  object-fit: cover;
+  object-position: center top;
+
 }
 
 
