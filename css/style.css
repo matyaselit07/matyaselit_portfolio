@@ -379,6 +379,9 @@ h3 {
 @media (max-width: 480px)
 { 
    /* kis mobilok felett */
+   .blur-overlay {
+      display: none;
+   }
 }
 
 @media (max-width: 600px)  
