@@ -180,8 +180,8 @@ h1 {
 
 .portfolio-item {
    position: relative;
-   width: 250px;
-   height: 200px;
+   width: 300px;
+   /* height: 250px; */
    padding: 1rem 3rem;
    overflow: hidden;
 }
@@ -191,6 +191,10 @@ h1 {
    height: 100%;
    object-fit: cover;
    transition: opacity 0.4s ease;
+}
+
+.portfolio-link {
+   color: var(--color-primary);
 }
 
 .bubble {
@@ -215,6 +219,9 @@ h1 {
   opacity: 1;
 }
 
+.bubble-list li{
+   padding: .5rem;
+}
 
 
 /* Kapcsolat */
