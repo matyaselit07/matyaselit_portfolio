@@ -1,143 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css?v5">
-   <title>Matyaselit</title>
-</head>
-   <body>
-      <div id="fooldal"></div>
-      <!-- Fejléc -->
-      <header>
-         <input type="checkbox" name="hamburger" id="menu-toggle">
-         <label for="menu-toggle" class="hamburger-button">
-             <span class="hamburger-lines"></span>
-         </label>
-         <nav class="navbar-list">
-            <div><a href="#fooldal" class="navbar-list--data">FŐOLDAL</a></div>
-            <div><a href="#rolam" class="navbar-list--data">RÓLAM</a></div>
-            <div><a href="#my_portfolio" class="navbar-list--data">PORTFÓLIÓ</a></div>
-            <div><a href="#kapcsolat" class="navbar-list--data">KAPCSOLAT</a></div>
-            </nav>
-      </header>
-      
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css?v5" />
+    <title>Matyaselit</title>
+  </head>
+  <body>
+    <div id="fooldal"></div>
+    <!-- Fejléc -->
+    <header>
+      <input type="checkbox" name="hamburger" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger-button">
+        <span class="hamburger-lines"></span>
+      </label>
+      <nav class="navbar-list">
+        <div><a href="#fooldal" class="navbar-list--data">FŐOLDAL</a></div>
+        <div><a href="#rolam" class="navbar-list--data">RÓLAM</a></div>
+        <div>
+          <a href="#my_portfolio" class="navbar-list--data">PORTFÓLIÓ</a>
+        </div>
+        <div><a href="#kapcsolat" class="navbar-list--data">KAPCSOLAT</a></div>
+      </nav>
+    </header>
 
-      <!-- Blur -->
-      <div class="blur-overlay"></div>
-      <!-- Main -->
-      <main>
+    <!-- Blur -->
+    <div class="blur-overlay"></div>
+    <!-- Main -->
+    <main>
+      <!-- Rólam -->
+      <img class="main-img" src="/assets/img/3222795.jpg" alt="" />
 
-         <!-- Rólam -->
-         <img class="main-img" src="/assets/img/3222795.jpg" alt="">
-         
-         <div class="about_me">
-            <h1 id="rolam">Folly Mátyás</h1>
-            <div class="about_me-div">
-               <p>Junior frontend webfejlesztőként reszponzív, statikus és interaktív weboldalakat készítek HTML, CSS, SCSS, Bootstrap és JavaScript használatával. Projektjeimben a tiszta oldalstruktúrára, az átlátható kódra, a mobilbarát megjelenésre és az alapvető felhasználói interakciókra fókuszálok. Jelenleg a JavaScript-tudásom mélyítésén és komplexebb frontend funkciók építésén dolgozom.</p>
-               <img class="self-portrait" src="./assets/img/selfie_06.png" alt="">
+      <div class="about_me">
+        <h1 id="rolam">Folly Mátyás</h1>
+        <div class="about_me-div">
+          <p>
+            Junior frontend webfejlesztőként reszponzív, statikus és interaktív
+            weboldalakat készítek HTML, CSS, SCSS, Bootstrap és JavaScript
+            használatával. Projektjeimben a tiszta oldalstruktúrára, az
+            átlátható kódra, a mobilbarát megjelenésre és az alapvető
+            felhasználói interakciókra fókuszálok. Jelenleg a JavaScript-tudásom
+            mélyítésén és komplexebb frontend funkciók építésén dolgozom.
+          </p>
+          <img class="self-portrait" src="./assets/img/selfie_06.png" alt="" />
+        </div>
+
+        <!-- Ismereteim -->
+        <h2>Fő Ismereteim</h2>
+        <ul class="skills">
+          <li>
+            <img
+              class="skills-logo"
+              src="/assets/svg/html5-logo.svg"
+              alt="HTML5"
+            />
+            <p>HTML5</p>
+          </li>
+          <li>
+            <img
+              class="skills-logo"
+              src="/assets/svg/css3-logo.svg"
+              alt="CSS"
+            />
+            <p>CSS3</p>
+          </li>
+          <li>
+            <img
+              class="skills-logo"
+              src="/assets/svg/js-logo.svg"
+              alt="Javascript"
+            />
+            <p>JavaScript</p>
+          </li>
+          <li>
+            <img
+              class="skills-logo"
+              src="/assets/svg/bootstrap-logo.svg"
+              alt="Javascript"
+            />
+            <p>Bootstrap</p>
+          </li>
+          <li>
+            <img
+              class="skills-logo"
+              src="/assets/svg/sass-logo.svg"
+              alt="Javascript"
+            />
+            <p>SaSS</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Portfólió -->
+      <section id="my_portfolio" class="portolio">
+        <h2>Portfólió munkák</h2>
+        <div class="portfolio-div">
+          <div class="portfolio-item">
+            <a
+              href="https://matyaselit07.github.io/Car_rental_Portfolio_work/"
+              class="portfolio-link"
+            >
+              <img
+                class="portfolio-img"
+                src="/assets/img/portfolio_work_01.jpg"
+                alt="munka1"
+              />
+              <div class="bubble">
+                <ul class="bubble-list">
+                  <li>
+                    Sportautó-bérlési landing page reszponzív elrendezéssel,
+                    SCSS-alapú stílusstruktúrával, hamburger menüvel és
+                    JavaScript-alapú galéria/interakció megoldással.
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="portfolio-item">
+            <a
+              href="https://matyaselit07.github.io/Fishing_shop_Portfolio_work/"
+              class="portfolio-link"
+            >
+              <img
+                class="portfolio-img"
+                src="/assets/img/portfolio_work_02.jpg"
+                alt="munka2"
+              />
+              <div class="bubble">
+                <ul class="bubble-list">
+                  <li>
+                    Bootstrap 5 alapú termékbemutató oldal navigációval,
+                    carousel résszel, termékkártyákkal, árazási blokkal és
+                    kapcsolat szekcióval.
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://matyaselit07.github.io/Book_Shop_Portfolio_work/"
+              ><img
+                class="portfolio-img"
+                src="/assets/img/portfolio_work_03_1.jpg"
+                alt="munka3"
+            /></a>
+            <div class="bubble">
+              <ul class="bubble-list">
+                <li>
+                  Ez a projekt bemutatja a gyakorlati JavaScript-készségeimet, a
+                  dinamikus tartalomkezelésre, a felhasználói interakcióra és a
+                  valós idejű felhasználói felület frissítésére összpontosítva.
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- Ismereteim -->
-            <h2>Fő Ismereteim</h2>
-            <ul class="skills">
-               <li>
-                  <img class="skills-logo" src="/assets/svg/html5-logo.svg" alt="HTML5">
-                  <p>HTML5</p>
-               </li>
-               <li>
-                  <img class="skills-logo" src="/assets/svg/css3-logo.svg" alt="CSS">
-                  <p>CSS3</p>
-               </li>
-               <li>
-                  <img class="skills-logo" src="/assets/svg/js-logo.svg" alt="Javascript">
-                  <p>Javascript</p>
-               </li>
-            </ul>
-         </div>
-
-         <!-- Portfólió -->
-         <section id="my_portfolio" class="portolio">
-            <h2>Portfólió munkák</h2>
-            <div class="portfolio-div">
-                <div class="portfolio-item">
-                    <a href="https://matyaselit07.github.io/Car_rental_Portfolio_work/" class="portfolio-link">
-                     <img class="portfolio-img" src="/assets/img/portfolio_work_01.jpg" alt="munka1">
-                     <div class="bubble">
-                           <ul class="bubble-list">
-                              <li>Sportautó-bérlési landing page reszponzív elrendezéssel, SCSS-alapú stílusstruktúrával, hamburger menüvel és JavaScript-alapú galéria/interakció megoldással.</li>
-                           </ul>
-                     </div>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                     <a href="https://matyaselit07.github.io/Fishing_shop_Portfolio_work/" class="portfolio-link">
-                        <img class="portfolio-img" src="/assets/img/portfolio_work_02.jpg" alt="munka2">
-                        <div class="bubble">
-                              <ul class="bubble-list">
-                                 <li>Bootstrap 5 alapú termékbemutató oldal navigációval, carousel résszel, termékkártyákkal, árazási blokkal és kapcsolat szekcióval.</li>
-                              </ul>
-                        </div>
-                     </a>
-                </div>
-                <!-- <div class="portfolio-item">
-                    <a href="#"><img class="portfolio-img" src="/assets/img/3222795.jpg" alt="munka3"></a>
-                    <div class="bubble">Munka 3 leírás</div>
-                </div> -->
-            </div>
-         </section>
-
-         <!-- Kapcsolat -->
-         <div class="contact">
+      <!-- Kapcsolat -->
+      <div class="contact">
+        <section>
+          <h2 id="kapcsolat">Kapcsolat</h2>
+          <form action="https://formspree.io/f/mblaeyjo" method="post">
             <section>
-            <h2 id="kapcsolat">Kapcsolat</h2>
-            <form action="https://formspree.io/f/mblaeyjo" method="post">
-            <section>
-               <label for="név-id"></label>
-               <input 
-               type="text"
-               name="név"
-               id="név-id"
-               placeholder="Név..."
-               required>
+              <label for="név-id"></label>
+              <input
+                type="text"
+                name="név"
+                id="név-id"
+                placeholder="Név..."
+                required
+              />
             </section>
             <section>
-               <label for="email-id"></label>
-               <input 
-               type="email" 
-               name="e-mail"
-               id="email-id"
-               placeholder="E-mail..."
-               required>
+              <label for="email-id"></label>
+              <input
+                type="email"
+                name="e-mail"
+                id="email-id"
+                placeholder="E-mail..."
+                required
+              />
             </section>
             <section>
-               <label for="szöveg-id"></label>
-               <textarea class="form-text" 
-               name="szöveg" 
-               id="szöveg-id"
-               placeholder="Üzenet...">
-               </textarea>
+              <label for="szöveg-id"></label>
+              <textarea
+                class="form-text"
+                name="szöveg"
+                id="szöveg-id"
+                placeholder="Üzenet..."
+              >
+              </textarea>
             </section>
-            <input class="form-button" 
-               type="submit" value="Küldés">
-         </form>          
-         </section>
+            <input class="form-button" type="submit" value="Küldés" />
+          </form>
+        </section>
+      </div>
+    </main>
 
-         </div>
-      </main>
-
-      <!-- Lábléc -->
-      <footer>
-         <div class="footer-div">
-            <a href="#fooldal"><img class="footer-logo" src="/assets/svg/facebook-logo.svg" alt="facebook_logo"></a>
-            <a href="#fooldal"><img class="footer-logo" src="/assets/svg/youtube-logo.svg" alt="youtube_logo"></a>
-            <a href="https://www.linkedin.com/in/matyas-folly-b0319b40a/" target="blank"><img class="footer-logo" src="/assets/svg/linkedin-logo.svg" alt="linkedin_logo"></a>
-            <a target="blank" href="https://github.com/matyaselit07"><img class="footer-logo" src="/assets/svg/github-logo.svg" alt="github_logo"></a>
-         </div>       
-         <div class="footer-ref"><a href="tel:+36702768140">+36 70 276 8140</a></div>
-         <div class="footer-ref"><a href="mailto:matyaselit07@gmail.com">matyaselit07@gmail.com</a></div>
-         <h3>Copyright2026&copy;matyaselit07</h3>
-      </footer>
-      <script src="/js/main.js"></script>
-   </body>
+    <!-- Lábléc -->
+    <footer>
+      <div class="footer-div">
+        <a href="#fooldal"
+          ><img
+            class="footer-logo"
+            src="/assets/svg/facebook-logo.svg"
+            alt="facebook_logo"
+        /></a>
+        <a href="#fooldal"
+          ><img
+            class="footer-logo"
+            src="/assets/svg/youtube-logo.svg"
+            alt="youtube_logo"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/matyas-folly-b0319b40a/"
+          target="blank"
+          ><img
+            class="footer-logo"
+            src="/assets/svg/linkedin-logo.svg"
+            alt="linkedin_logo"
+        /></a>
+        <a target="blank" href="https://github.com/matyaselit07"
+          ><img
+            class="footer-logo"
+            src="/assets/svg/github-logo.svg"
+            alt="github_logo"
+        /></a>
+      </div>
+      <div class="footer-ref">
+        <a href="tel:+36702768140">+36 70 276 8140</a>
+      </div>
+      <div class="footer-ref">
+        <a href="mailto:matyaselit07@gmail.com">matyaselit07@gmail.com</a>
+      </div>
+      <h3>Copyright2026&copy;matyaselit07</h3>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
