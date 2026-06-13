@@ -170,7 +170,7 @@ h1 {
   position: relative;
   width: 300px;
   padding: 1rem;
-   margin: .5rem;
+  margin: 0.5rem;
   overflow: hidden;
 }
 
@@ -193,7 +193,7 @@ h1 {
   font-size: 1.1rem;
   background: var(--color-secondary);
   border-radius: 20px;
-  padding: 1.5rem;
+  padding: 0.5rem;
   opacity: 0;
   transition: opacity 0.4s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -371,7 +371,8 @@ h3 {
 @media (max-width: 600px) {
   /* mobil → phablet/tablet */
   .skills {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -422,16 +423,4 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
-}
-
-@media (max-width: 1280px) {
-  /* desktop */
-}
-
-@media (max-width: 1440px) {
-  /* nagyobb desktop */
-}
-
-@media (max-width: 1920px) {
-  /* FHD és felette */
 }
